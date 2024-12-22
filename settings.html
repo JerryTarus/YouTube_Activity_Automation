@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tool Settings</title>
+  <link rel="stylesheet" href="settings.css">
+</head>
+<body>
+  <div class="settings-container">
+    <h1>Settings</h1>
+
+    <!-- Activity Interval -->
+    <div class="setting">
+      <label for="activity-interval">Activity Interval (seconds):</label>
+      <input type="number" id="activity-interval" min="5" max="120" value="15">
+    </div>
+
+    <!-- Auto-Rest Mode -->
+    <div class="setting">
+      <label for="auto-rest-mode">
+        <input type="checkbox" id="auto-rest-mode">
+        Enable Auto-Rest Mode
+      </label>
+      <div id="rest-settings" class="hidden">
+        <label for="rest-duration">Rest Duration (seconds):</label>
+        <input type="number" id="rest-duration" min="10" max="300" value="30">
+        <label for="active-duration">Active Duration (seconds):</label>
+        <input type="number" id="active-duration" min="10" max="300" value="60">
+      </div>
+    </div>
+
+    <!-- Theme Toggle -->
+    <div class="setting">
+      <label for="theme-toggle">Theme:</label>
+      <select id="theme-toggle">
+        <option value="light">Light</option>
+        <option value="dark">Dark</option>
+      </select>
+    </div>
+
+    <!-- Save Button -->
+    <button id="save-settings">Save Settings</button>
+  </div>
+
+  <script src="settings.js"></script>
+</body>
+</html>
