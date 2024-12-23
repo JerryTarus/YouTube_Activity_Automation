@@ -1,8 +1,8 @@
 {
     "manifest_version": 3,
-    "name": "YouTube Automation Tool",
+    "name": "Loop",
     "version": "1.0",
-    "description": "Prevents YouTube player from pausing music by automating user activity.",
+    "description": "Prevent YouTube player from pausing music by automating user activity like navigating tabs, interacting with the youtube tab",
     "permissions": ["storage", "activeTab", "scripting"],
     "background": {
       "service_worker": "background.js"
